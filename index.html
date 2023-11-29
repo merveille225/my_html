@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Site Blockchain</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        section {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: grid;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Ajoutez la classe "background-image" à la section où vous souhaitez ajouter une image en arrière-plan */
+        .background-image {
+            background-image: url('mon_image.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: #fff; /* Assurez-vous que le texte est lisible sur l'image de fond */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenue sur Notre Site Blockchain</h1>
+    </header>
+
+    <section id="inscription">
+        <h2>Inscription</h2>
+        <form action="/inscription" method="post">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="email">E-mail :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="motDePasse">Mot de passe :</label>
+            <input type="password" id="motDePasse" name="motDePasse" required>
+
+            <button type="submit">S'inscrire</button>
+        </form>
+    </section>
+
+    <section id="transactions" class="background-image">
+        <h2>Transactions</h2>
+        <p>Pour effectuer une transaction, veuillez cliquer sur le lien ci-dessous :</p>
+        <a href="/transactions">Effectuer une transaction</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Notre Site Blockchain. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
